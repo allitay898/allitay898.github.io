@@ -27,15 +27,8 @@
 
         <footer class="portal-footer">
                 <p>&copy;| Allison Taylor | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-                <p id='date'><span id="currentdate"> </span></p>
-             </footer>
-           
-             <script>
-                 const todaysdate = new Date();
-                 console.log(todaysdate);
-                 //toLocalDateString
-                 const options = {weekday: 'long', day:'numeric', month:'long', year:'numeric'};
-                 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
-             </script>
+                <p id="last-updated-span">Last Updated: <span class="last-updated"></span></p> 
+            </footer>
+          <script src="./js/script.js"></script>
     </body>
 </html>
