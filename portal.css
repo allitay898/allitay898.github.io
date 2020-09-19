@@ -1,7 +1,7 @@
 .portal-header {
     padding: 15px;
     text-align: left; 
-    background-color:black;
+    background-color:blueviolet;
     color: white;
     font-size: 30px;
     font-family: 'Sans-serif';
@@ -15,7 +15,7 @@
       padding: 3px;
       font-size: 15px;
       font-family: 'Sans-serif';
-      background-color: black;
+      background-color: blue;
       color: white;
       border-radius: 10px 10px;
     }
