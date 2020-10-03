@@ -59,6 +59,10 @@ nav a{
     text-decoration:none;
 
 }
+
+.fontParagraph{
+    padding: 15px;
+}
 nav a{
     text-decoration: none;
     font-family:'Bitter', sans-serif; 
