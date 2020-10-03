@@ -14,12 +14,12 @@ img{
     width:100px;
     height: 100px;
 }
-.logi-box{
+.logo-box{
     width:150px;
     height:auto;
 }
 header,footer{
-    background-color: #12BA85;
+    background-color: #6495ED;
     width:80%;
     height:auto;
     margin: 0 auto;
@@ -54,7 +54,7 @@ nav a{
 
 }
 
-.first{
+.heading{
     padding:20px;
     text-decoration:none;
 
