@@ -1,0 +1,132 @@
+body{
+    font-family: 'Biryani', sans-serif;
+    margin:0;
+}
+
+
+h1,h2{
+    font-family: 'Bitter', sans-serif;
+}
+h2{
+    margin-bottom: 0;
+}
+img{
+    width:100px;
+    height: 100px;
+}
+.logi-box{
+    width:150px;
+    height:auto;
+}
+header,footer{
+    background-color: #12BA85;
+    width:80%;
+    height:auto;
+    margin: 0 auto;
+}
+main{
+    width:80%;
+    height:auto;
+    margin:0 auto;
+}
+main p{
+    margin-top:0;
+}
+h1{
+    padding-top:30px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top:0;
+    font-size: 2em;
+    letter-spacing: 4px;
+    
+    
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+   text-align: center;
+   display:block;
+   list-style-type: none;
+
+}
+
+.first{
+    padding:20px;
+    text-decoration:none;
+
+}
+nav a{
+    text-decoration: none;
+    font-family:'Bitter', sans-serif; 
+}
+
+nav ul li{
+    text-decoration: none;
+    padding:10px;
+}
+
+footer{
+    text-align: center;
+    font-size: smaller;
+    height: 100px;
+    padding-top:50px;
+    
+
+
+    
+}
+footer ul{
+   
+    list-style-type: none;
+    display: inline;
+    margin:0;
+    padding-left:0;
+
+}
+footer ul li{
+    display: inline;
+}
+main li{
+    margin-top: 20px;
+}
+
+nav a{
+    color:black;
+}
+
+a link:active{
+    color: grey;
+}
+a:hover{
+    color:whitesmoke;
+}
+
+
+@media only screen and (min-width:37.5em){
+    nav ul{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+        padding:0;
+    }
+    
+}
+
+
+@media only screen and (min-width:60em)
+   { nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+ footer{
+    text-align: center;
+    font-size: smaller;
+    height: 100px;
+    padding-top:50px;
+}
+}
