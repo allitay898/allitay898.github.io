@@ -17,7 +17,7 @@ header {
     background-color:#6495ED;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
