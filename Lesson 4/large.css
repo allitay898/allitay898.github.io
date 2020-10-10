@@ -12,5 +12,23 @@
         width: 130px;
         margin-right: 15px;
     }
-
+    .maincontent {
+        max-width: 85%;
+        min-height: 100px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .sectioncontent {
+        height: 100px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        background: grey;
+        border: 2px black;
+        border-radius: 5px 5px 5px 5px;
+        color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
