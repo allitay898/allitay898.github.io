@@ -54,6 +54,9 @@ h3 {
     text-align: center;
 }
 
+.logo-box{
+    display: 50%;
+}
 
 button {
     margin: auto;
