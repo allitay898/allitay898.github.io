@@ -1,7 +1,9 @@
-// Display current time
-try {
-    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-    document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
-  } catch (e) {
-    alert('Error with code or your browser does not support Locale');
-  }
+function getFormattedDate() {
+    let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let theDate = new Date();
+    return daysOfWeek[theDate.getDay()] + " " + theDate.getDay() + " " + months[theDate.getMonth()] + " " + theDate.getFullYear(); 
+}
+document.addEventListener("DOMContentLoaded", function() { 
+    document.getElementById("currentDate").innerHTML = getFormattedDate(); 
+});

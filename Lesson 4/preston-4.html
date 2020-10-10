@@ -1,48 +1,74 @@
-<!doctype html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device width, initial-scale=1">
-        <title>Weather For All</title>
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
-    </head>
-    <body>
-        <header>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather For All</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
             <img class="logo-box" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Ficonfinder_0006_Weather_171261.png?v=1601743295715" alt="Weather Logo">
-            <section>
-                <h1 class="homename">Weather For All</h1>
-                <h2 class="motto">Make sure you're prepared for any occasion</h2>
-            </section>
-        </header>
-        <nav>
-            <ul class="navigation">
-                <li><a class="ham" href="#">☰ Menu</a></li>
-		        <li><a href="#">Home</a></li>
-		        <li><a href="#">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </nav>
-        <div class="maincontent">
-            <div class="contentsection"><h2>Hero image / Weather Summary</h2></div>
-            <div class="contentsection"><h2>5 Day Forecast</h2></div>
-            <div class="contentsection"><h2>Article</h2></div>
-            <div class="contentsection"><h2>Contact Information</h2></div>
+        </picture>
+        <section class="heading">
+            <h1>Weather For All</h1>
+            <div class="motto">Make sure you're ready for any occasion</div>
+
+
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+
+
+
+    </header>
+    <nav class="navigation">
+
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+
+
+    <main class="content">
+        <section class="one">
+            <h1 class="city">Preston, Idaho</h1>
+
+        </section>
+        
+        <section class="two">
+            <h2 class="summary">Hero With Weather Summary</h2>
+
+        </section>
+        <section class="three">
+            <h1 class="forcast">Five Day Forcast</h1>
+            <h2 class="article">Article Title</h2>
+
+        </section>
+        <section class="four">
+            <h2 class="contact">Contact Information</h2>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>&copy; <span id="year"></span> | Makenzie Hale | WDD 230 |<a class="bIdaho" target="_blank"
+                href="https://www.byui.edu/online">&nbsp;BYU Idaho Online Learning |</a> &nbsp;<span
+                id="currentDate"></span>&nbsp;</span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
         </div>
-        <footer>
-            <p>
-                © 2020 | Allison Taylor | Idaho | 
-                <a href="https://www.byui.edu/online" class="byu">BYUI Online Learning</a>
-            </p>
-            <p>
-                Current Date: <span id="currentdate"></span>
-            </p>
-        </footer>
-        <script src="js/currentdate.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/currentdate.js"></script>
+
+</body>
+
 </html>
