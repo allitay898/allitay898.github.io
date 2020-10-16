@@ -37,6 +37,72 @@
     nav ul {
         margin-left: 2%;
     }
+    .summary {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: thistle;
+        border: 1px solid #ccc;
+        padding: .5rem;
+        box-shadow: 0 0 30px #777777;
+        opacity: .8;
 
+
+    }
+
+    #pancakebanner {
+        font-size: 20px;
+    }
+
+    .col-head,
+    .article,
+    .forecast {
+        font-size: 25px;
+    }
+
+    .column {
+        padding: 5px;
+        border: none;
+    }
+
+    .art {
+        display: flex;
+
+    }
+
+    .sunshine {
+        max-width: 20%;
+        height: auto;
+        float: right;
+        margin: 0 10px 10px 0;
+
+    }
+
+    .data {
+        font-size: 20px;
+    }
+
+    .four {
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    .socialIcon {
+        max-width: 50px;
+    }
+
+    .map {
+        max-width: 25%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
 
 }
