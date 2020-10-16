@@ -30,6 +30,7 @@ header img {
     width: 100px;
     height: auto;
     margin-right: 40px;
+    display: 50%;
 }
 
 
@@ -205,6 +206,7 @@ p {
     display: block;
     max-width: 100%;
     padding: 10px;
+    display: 50%;
 
 }
 .four {
@@ -219,6 +221,8 @@ p {
 
 .map {
     max-width: 100%;
+    display: 50%;
+
 }
 
 footer {
