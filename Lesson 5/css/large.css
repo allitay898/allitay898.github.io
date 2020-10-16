@@ -42,7 +42,7 @@
         position: absolute;
         top: 50px;
         left: 10px;
-        background-color: thistle;
+        background-color: #F0F8FF;
         border: 1px solid #ccc;
         padding: .5rem;
         box-shadow: 0 0 30px #777777;
@@ -106,5 +106,3 @@
 
 }
 
-}
-}
