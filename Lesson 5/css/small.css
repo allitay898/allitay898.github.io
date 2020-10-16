@@ -108,17 +108,92 @@ nav ul.hide {
     padding: 25px;
 }
 
+.heroCon {
+    position: relative;
+    margin: 10px auto;
 
-.summary,
-.article,
-.contact{
-    border: 3px dashed #6495ED;
-    padding: 10px;
 }
+
+#pancakebanner {
+    display: none;
+    max-width: 100%;
+    background-color: #e5e5e5;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Piazzolla', serif;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+
+}
+
+p {
+    font-family: 'Bitter', sans-serif';
+
+}
+
+.summary {
+    display: block;
+    top: 25px;
+    left: 10px;
+    background-color: thistle;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777777;
+    opacity: .8;
+    text-align: center;
+
+
+}
+
+#title {
+    border-bottom: 2px solid black;
+}
+
+.banner {
+    width: 100%;
+    border: 2px solid black;
+
+}
+.column {
+    border-right: 1px solid black;
+}
+
+.weatherCol {
+    column-count: 5;
+    column-gap: 0;
+
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    text-align: center;
+    font-size: .5rem;
+
+
+}
+
+.weatherIcon {
+    max-width: 60px;
+}
+
+
 
 .three {
     border: 4px solid #FFD700;
-    padding: 10px;
+    text-align: center;
 }
 
 .forcast {
@@ -126,8 +201,25 @@ nav ul.hide {
     padding: 20px;
     text-align: center;
 }
+.sunshine {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
 
+}
+.four {
+    border: 3px solid black;
+    display: block;
+    padding: 20px;
+}
 
+.socialIcon {
+    max-width: 20px;
+}
+
+.map {
+    max-width: 100%;
+}
 
 footer {
     display: flex;

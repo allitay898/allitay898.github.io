@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <title>Weather For All</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -32,7 +32,7 @@
 
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -42,22 +42,75 @@
 
 
     <main class="content">
-        <section class="one">
-            <h1 class="city">Preston, Idaho</h1>
 
+        <div id="pancakebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
+        <h1 id="title">Preston, Idaho</h1>
+        <div class="heroCon">
+            <img class="banner" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-johannes-plenio-1133505.jpg?v=1602880383526" alt="banner image">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76°F</p>
+                <p>Wind Chill: °F </p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+
+    
+        <section class="three">
+            <h2 class="forcast">Five Day Forcast</h2>
+            <div class="weatherCol">
+                <div class="column">
+                    <span class="col-head">Mon</span>
+                    <img class="weatherIcon" src="images/iconfinder_weather_3_2682848.png" alt="sunny!">
+                    <span class="data">84&#176;</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Tues</span>
+                    <img class="weatherIcon" src="images/iconfinder_rain-cloud_2995003.png" alt="rain">
+                    <span class="data">79&#176;</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Wed</span>
+                    <img class="weatherIcon" src="images/iconfinder_weather-cloudy_274770.png" alt="cloudy">
+                    <span class="data">73&#176;</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Thurs</span>
+                    <img class="weatherIcon" src="images/iconfinder_weather_3_2682848.png" alt="sunny">
+                    <span class="data">72&#176;</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Fri</span>
+                    <img class="weatherIcon" src="images/iconfinder_rain-cloud_2995003.png" alt="rain">
+                    <span class="data">72&#176;</span>
+                </div>
+            </div>
         </section>
         
-        <section class="two">
-            <h2 class="summary">Hero With Weather Summary</h2>
-
+        <h2 class="article">Article Title</h2>
+        <section class="info">
+            <p>Info about article</p>
+            <img class="sunshine" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-bruno-scramgnon-585759.jpg?v=1602880374507" alt="sunshine">
         </section>
-        <section class="three">
-            <h1 class="forcast">Five Day Forcast</h1>
-            <h2 class="article">Article Title</h2>
 
-        </section>
         <section class="four">
+            <div class="contactInfo"></div>
             <h2 class="contact">Contact Information</h2>
+            <p>Email: contactus@weatherforall.com</p>
+                <p>Call Us: 888-555-2323</p>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100002451197113"> <img
+                        class="socialIcon" src="images/iconfinder_social-instagram-new-circle_1164349.png"
+                        alt="insta"></a>
+                <a target="_blank" href="https://twitter.com/?lang=en"><img class="socialIcon"
+                        src="images/iconfinder_twitter_circle_color_107170.png" alt="twitter"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img class="socialIcon"
+                        src="images/iconfinder_1_Facebook_colored_svg_copy_5296499.png" alt="facebook"></a>
+            </div>
+
+            <img class="map" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-johnmark-smith-32307.jpg?v=1602880458935" alt="map">
+
         </section>
 
 
