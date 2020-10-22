@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Weather For All</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="showBanner();">
+    <header>
+        <picture>
+            <img class="logo-box" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Ficonfinder_0006_Weather_171261.png?v=1601743295715" alt="Weather Logo">
+        </picture>
+        <section class="heading">
+            <h1>Weather For All</h1>
+            <div class="motto">Make sure you're ready for any occasion</div>
+
+
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+
+
+
+    </header>
+    <nav class="navigation">
+
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="content">
+
+        <div id="pancakebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
+        <h1 id="title">Preston, Idaho</h1>
+        <div class="heroCon">
+            <img class="banner" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-johannes-plenio-1133505.jpg?v=1602880383526" alt="banner image">
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76°F</p>
+                <p>Wind Chill: °F </p>
+                <p>Humidity: 69%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+
+    
+        <section class="three">
+            <h2 class="forcast">Five Day Forcast</h2>
+            <div class="weatherCol">
+                <div class="column">
+                    <span class="col-head">Mon</span>
+                    <img class="weatherIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2FSunny-256.png?v=1602886988551" alt="sunny">
+                    <span class="data">89°F</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Tues</span>
+                    <img class="weatherIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2FSunny-256.png?v=1602886988551" alt="sunny">
+                    <span class="data">87°F</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Wed</span>
+                    <img class="weatherIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2FSunny-256.png?v=1602886988551" alt="cloudy">
+                    <span class="data">78°F</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Thurs</span>
+                    <img class="weatherIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2FSunny-256.png?v=1602886988551" alt="sunny">
+                    <span class="data">75°F</span>
+                </div>
+                <div class="column">
+                    <span class="col-head">Fri</span>
+                    <img class="weatherIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2FSunny-256.png?v=1602886988551" alt="sunny">
+                    <span class="data">72°F</span>
+                </div>
+            </div>
+        </section>
+        
+        <h2 class="article">Article Title</h2>
+        <section class="info">
+            <p>Preston is an agricultural community located on the most northern side of the pristine Cache Valley touting views that can arguably be unmatched.  Cache Valley is also known as “Bridgerland”, which was discovered and explored by the famous American mountain man Jim Bridger nearly 200 years ago.  All throughout the year Preston serves as the primary hub to the most rewarding family outdoor activities found in the upper intermountain west.  These activities include: snowmobiling in Strawberry Canyon, feeding the family at numerous local fast food restaurants before driving 15 minutes to the only ski resort in Cache Valley.  Filling your boat and/or ATV before waterskiing and fishing on the multiple reservoirs, streams and rivers that also include hunting, hiking and camping into the Cache & Caribou National Forests.</p>
+            <img class="sunshine" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-bruno-scramgnon-585759.jpg?v=1602880374507" alt="sunshine">
+        </section>
+
+        <section class="four">
+            <div class="contactInfo"></div>
+            <h2 class="contact">Contact Information</h2>
+            <p>Email: contactus@weatherforall.com</p>
+                <p>Call Us: 888-555-2323</p>
+                <a target="_blank" href="#"> <img
+                        class="socialIcon" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fsocial-instagram-new-square2-256.webp?v=1602888893490"
+                        alt="insta"></a>
+                <a target="_blank" href="#"><img class="socialIcon"
+                        src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Ftwitter-256.webp?v=1602888898315" alt="twitter"></a>
+                <a target="_blank" href="#"><img class="socialIcon"
+                        src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fsocial-facebook-square2-256.webp?v=1602888889191" alt="facebook"></a>
+            </div>
+
+            <img class="map" src="https://cdn.glitch.com/06e5fabc-d379-4eb7-b6b5-7ee597a4df24%2Fpexels-johnmark-smith-32307.jpg?v=1602880458935" alt="map">
+
+        </section>
+
+
+    </main>
+    <footer>
+        <div>&copy; <span id="year"></span> | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+                href="https://www.byui.edu/online">&nbsp;BYU Idaho Online Learning |</a> &nbsp;<span
+                id="currentDate"></span>&nbsp;</span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/currentdate.js"></script>
+
+</body>
+
+</html>
