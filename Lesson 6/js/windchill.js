@@ -1,7 +1,7 @@
 function windChill(){
     let t = parseFloat(document.getElementById("t").innerText);
     let s = parseFloat(document.getElementById("s").innerText);
-    let ouptut ="f";
+    let ouptut = parseFloat(document.getElementById("f").innerText);
 
     if(t >= 50 && s > 10){
     f = (35.74+(0.6215 * t)) - (35.75*Math.pow(s,0.16))+(0.4275*t)*(Math.pow(s,0.16));
