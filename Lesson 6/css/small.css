@@ -252,6 +252,32 @@ a:hover{
 }
 
 
+#content{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:25px 5px;
+    padding:5px;
+}
+figure{
+    max-width: 100%;
+}
+figure img[data-src]{
+    filter: blur(0.2em);
+    }
+    
+  figure img{
+        filter: blur(0em);
+        transition: filter 0.5s;
+        max-width: 300px;
+        margin: 0 auto;
+        height:300px;
+    }
+
+figcaption{
+    visibility: hidden;
+}
+
+
 .clearfix:after {
     content: "";
     display: table;

@@ -112,4 +112,11 @@
         justify-content: space-around;
     }
 
+
+
+    #content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

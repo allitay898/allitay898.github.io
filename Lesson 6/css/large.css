@@ -120,5 +120,27 @@
         justify-content: space-around;
     }
 
+
+
+    #content{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    figcaption{
+        visibility: visible;
+        text-align: center;
+      
+    }
+    figure:hover{
+        border: 1px solid #ccc;
+        padding:5px;
+        box-shadow:5px 5px 5px #999;
+
+    }
+    h2{
+        font-size: 50px;
+    }
+
+
 }
 
