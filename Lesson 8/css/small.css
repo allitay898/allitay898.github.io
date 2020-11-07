@@ -123,9 +123,8 @@ nav ul.hide {
     align-content: center;
     max-width: 700px;
     padding: 10px;
-    background-color: lightgoldenrodyellow;
     margin: 15px auto;
-    border: solid #fcc765 2px;
+    border: solid #FFD700 2px;
     border-radius: 5px;
     display: grid;
     font-weight: bold;
@@ -142,11 +141,11 @@ nav ul.hide {
 
 .inputarea:nth-child(1) input {
     padding: 5px;
-    border-color: #fcc765;
+    border-color: #FFD700;
 }
 
 .inputarea:nth-child(2) input {
-    border-color: #fcc765;
+    border-color: #FFD700;
 }
 
 .inputarea:nth-child(2) :nth-child(10), :nth-child(9), :nth-child(8) {
