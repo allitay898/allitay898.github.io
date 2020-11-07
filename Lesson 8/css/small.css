@@ -167,6 +167,15 @@ nav ul.hide {
     max-width: 100px;
 }
 
+.flexly {
+    display: flex;
+    align-items: center;
+}
+
+#ratingvalue {
+    margin: 1 15px;
+}
+
 .subcontent {
     position: relative;
     margin: 0px 0px 15px 0px;

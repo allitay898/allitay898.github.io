@@ -78,9 +78,9 @@
                     <option value="Tornado">
                 </datalist>
             </label>
-            <label for="severity">
+            <label class="flexly" for="rating">
                 Storm Severity:
-                <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span>
             </label>
             <datalist id="tickmarks">
@@ -96,7 +96,7 @@
                 <option value="9">
                 <option value="10">
             </datalist>
-            
+
             <label for="selectregion">
                 Storm Region:
                 <select name="region" id="selectregion" onchange="selectResponse()">
