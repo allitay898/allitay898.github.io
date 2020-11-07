@@ -41,84 +41,75 @@
     </nav>
 
 
-    <main class="content">
+    <main>
+        <h2>Report a Storm</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top"> First Name: <input type="text" name="fname" required autofocus
+                        pattern="[A-Za-z]{1-8,}"></label>
+                <label class="top">Last Name:<input type="text" name="lname" required autofocus pattern="[A-Za-z]{1-8,}"></label>
 
-        <div id="pancakebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
-        <h1 id="title">Preston, Idaho</h1>
-        <div class="heroCon">
-            <picture class="banner">
-            
-                <source media="(min-width:1200px)" srcset="images/Bannerlarge.jpg">
-                <source media="(min-width:650px)" srcset="images/bannermedium.jpg">
-                <source media="(min-width:375px)" srcset="images/bannersmall.jpg">
-                <img src="allitay898.github.io/Lesson 6/images/pexels-johannes-plenio-1133505 (1).jpg" alt="banner image" style="width:auto;">
-            
-            </picture>
-            <section class="summary">
-                <h3>Weather Summary</h3>
-                <p>Today's Weather:</p>
-                <p>Temperature: <span id="t">45</span> &#176;</p>
-                <p>Wind Speed: <span id="s"> 12</span>MPH</p>
-                <p>Wind chill: <span id="windChill"></span></p>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label for="num" class="top">Zip code<input type="number" id="num" name="num" required></label>
 
-            </section>
-        </div>
 
-    
-        <section class="three">
-            <h2 class="forecast">Five Day Forcast</h2>
-            <div class="weatherCol">
-                <div class="column">
-                    <span class="col-head">Mon</span>
-                    <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">89°F</span>
-                </div>
-                <div class="column">
-                    <span class="col-head">Tues</span>
-                    <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">87°F</span>
-                </div>
-                <div class="column">
-                    <span class="col-head">Wed</span>
-                    <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="cloudy">
-                    <span class="data">78°F</span>
-                </div>
-                <div class="column">
-                    <span class="col-head">Thurs</span>
-                    <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">75°F</span>
-                </div>
-                <div class="column">
-                    <span class="col-head">Fri</span>
-                    <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">72°F</span>
-                </div>
-            </div>
-        </section>
-        
-        <h2 class="article">Article Title</h2>
-        <section class="info">
-            <p>Preston is an agricultural community located on the most northern side of the pristine Cache Valley touting views that can arguably be unmatched.  Cache Valley is also known as “Bridgerland”, which was discovered and explored by the famous American mountain man Jim Bridger nearly 200 years ago.  All throughout the year Preston serves as the primary hub to the most rewarding family outdoor activities found in the upper intermountain west.  These activities include: snowmobiling in Strawberry Canyon, feeding the family at numerous local fast food restaurants before driving 15 minutes to the only ski resort in Cache Valley.  Filling your boat and/or ATV before waterskiing and fishing on the multiple reservoirs, streams and rivers that also include hunting, hiking and camping into the Cache & Caribou National Forests.</p>
-            <img class="sunshine" src="../Lesson 6/images/pexels-bruno-scramgnon-585759 (1).jpg" alt="sunshine">
-        </section>
+            </fieldset>
 
-        <section class="four">
-            <div class="contactInfo"></div>
-            <h2 class="contact">Contact Information</h2>
-            <p>Email: contactus@weatherforall.com</p>
-                <p>Call Us: 888-555-2323</p>
-                <a target="_blank" href="#"> <img
-                        class="socialIcon" src="../Lesson 6/images/social-instagram-new-square2-256 (1).webp" alt="insta"></a>
-                <a target="_blank" href="#"><img class="socialIcon"
-                         src="../Lesson 6/images/twitter-256 (1).webp" alt="twitter"></a>
-                <a target="_blank" href="#"><img class="socialIcon"
-                        src="../Lesson 6/images/social-facebook-square2-256 (1).webp" alt="facebook"></a>
-            </div>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Date of Storm<input type="date" name="stormDate"></label>
+                <label class="top" for="storm">Type of Storm:
+                    <input list="storm-type" id="storm" name="stormtype" /></label>
+                <datalist id="storm-type">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+                <label class="top" for="rating">Severity of Storm</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
 
-            <img class="map" src="../Lesson 6/images/pexels-johnmark-smith-32307 (1).jpg" alt="map">
 
-        </section>
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
 
+                </datalist>
+
+
+                <label class="top">Storm Region
+                    <select name="subject">
+                        <option value=""> Please Select &#9662;</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fishave">Fishaven</option>
+                    </select>
+                </label>
+
+                <div>Are you in Danger?</div>
+                <label class="sbs"><input type="radio" name="audience" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="audience" value="no">No</label>
+                <label class="sbs"><input type="radio" name="audience" value="maybe">Maybe</label>
+
+                <label class="top" for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+
+            </fieldset>
+            <input type="submit" value="Report Storm" class="submitButn">
+        </form>
 
     </main>
     <footer>
