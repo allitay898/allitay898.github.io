@@ -79,6 +79,13 @@
 
     }
 
+    #content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:25px 5px;
+        padding:5px;
+    }
+
     .sunshine {
         max-width: 20%;
         height: auto;
@@ -112,10 +119,4 @@
         justify-content: space-around;
     }
 
-    #content{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap:25px 5px;
-        padding:5px;
-    }
 }
