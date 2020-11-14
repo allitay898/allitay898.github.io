@@ -1,4 +1,4 @@
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL) 
     .then(function (response) {
@@ -7,7 +7,7 @@ fetch(requestURL)
     .then(function (jasonObject){
         //console.table(jasonObject); checking the table, delete for final results
 
-        const towns = jasonObject["towns"];
+        const towns = jasonObject['towns'];
 
         for (let i = 0; i < towns.length; i++ ){
             if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs'|| towns[i].name == 'Fish Haven'){
