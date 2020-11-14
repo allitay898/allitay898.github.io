@@ -5,7 +5,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jasonObject){
-        //console.table(jasonObject); checking the table, delete for final results
 
         const towns = jasonObject['towns'];
 
