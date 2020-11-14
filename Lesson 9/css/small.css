@@ -396,6 +396,14 @@ div.town_info {
     display: grid;
     grid-template-rows: 1fr;
 }
+motto {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #FFD700;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
 
 name {
     font-family: Biryani, sans-serif;
