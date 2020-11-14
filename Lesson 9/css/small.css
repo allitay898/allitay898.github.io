@@ -207,6 +207,16 @@ p {
 
 }
 
+main figure.firstimg {
+    max-width: 760px;
+    margin: auto;
+
+}
+
+main figure.firstimg img {
+    width: 100%;
+}
+
 .summary {
     display: block;
     top: 25px;
