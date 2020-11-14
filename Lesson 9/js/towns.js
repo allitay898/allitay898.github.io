@@ -11,7 +11,7 @@ fetch(townURL)
 
         for (let i = 0; i < towns.length; i++ ){
             if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs'|| towns[i].name == 'Fish Haven'){
-                let town_info = document.createElement('info_blocks');
+                let town_js = document.createElement('info_blocks');
                 let name = document.createElement('h2');
                 let photo = document.createElement('img');
                 let motto = document.createElement('motto');
@@ -38,7 +38,7 @@ fetch(townURL)
                 //town_info.appendChild(events);
                 town_info.appendChild(photo);
 
-                document.querySelector('div.towns').appendChild(towns);
+                document.querySelector('div.town_js').appendChild(towns);
             }
         }
     })
