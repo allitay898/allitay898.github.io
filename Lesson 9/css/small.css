@@ -70,7 +70,7 @@ button {
 
 nav {
 
-    background-color: #F0F8FF;
+    background-color: #f0f0ff;
     font-family: 'Bitter', sans-serif;
 }
 
@@ -392,7 +392,7 @@ div.town_info {
     margin: auto;
     padding: 20px;
     justify-content: center;
-    background-color: #F0F8FF;
+    background-color: #f0f0ff;
     display: grid;
     grid-template-rows: 1fr;
 }
