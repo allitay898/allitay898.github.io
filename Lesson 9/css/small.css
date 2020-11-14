@@ -363,12 +363,6 @@ figcaption{
     clear: both;
 }
 
-.website_intro {
-    margin: auto;
-    padding: 80px;
-    font-family: 'Ariel Nova', sans-serif;
-}
-
 info_blocks {
     background-color: white;
     align-items: center;
@@ -398,23 +392,13 @@ div.town_info {
     margin: auto;
     padding: 20px;
     justify-content: center;
-    background-color: #b96646;
+    background-color: #F0F8FF;
     display: grid;
     grid-template-rows: 1fr;
 }
 
-
-motto {
-    margin-bottom: 20px;
-    font-style: italic;
-    color: #b96646;
-    font-weight: bold;
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
 name {
-    font-family: courier new, serif;
+    font-family: Biryani, sans-serif;
     margin: 0px;
     padding: 0.5px;
     grid-column-start: 1;
