@@ -38,7 +38,7 @@ fetch(requestURL)
                 //town_info.appendChild(events);
                 town_info.appendChild(photo);
 
-                document.querySelector('div.town_info').appendChild(towns);
+                document.querySelector('div.town_info').appendChild(town_info);
             }
         }
     })
