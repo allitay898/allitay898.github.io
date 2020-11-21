@@ -18,7 +18,7 @@ fetch(forapi)
 .then((jsObject) => {
    console.log(jsObject);
      var x = 1;
-     let weekDay = new Array(7);
+     var weekDay = new Array(7);
      weekDay[0] = "Sun";
      weekDay[1] = "Mon";
      weekDay[2] = "Tues";
@@ -27,11 +27,11 @@ fetch(forapi)
      weekDay[5] = "Fri";
      weekDay[6] = "Sat";
 
-     for(i = 0; i < jsObject.list.length; i++){
+     for(var i = 0; i < jsObject.list.length; i++){
       var myTime = jsObject.list[i].dt_txt.substring(11);
-        let date = new Date(jsObject.list[i].dt * 1000);
-        let weather = weekDay[date.getDay()];
-        if(myTime == '18:00:00' && x<=5 ) {
+        var myDate = new Date(jsObject.list[i].dt * 1000);
+        var weather = weekDay[myDate.getDay()];
+        if(myTime == '18:00:00' && x <= 5 ) {
            document.getElementById('weather' + x).textContent = weather;
            document.getElementById('forecast' + x).textContent = jsObject.list[i].main.temp + '°F';
           
@@ -43,4 +43,4 @@ fetch(forapi)
         }
 
      }
-})
+});
