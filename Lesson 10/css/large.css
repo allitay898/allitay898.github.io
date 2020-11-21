@@ -107,6 +107,10 @@
         justify-content: space-evenly;
     }
 
+    .contactInfo {
+        justify-content: right;
+    }
+
     .socialIcon {
         max-width: 50px;
     }
