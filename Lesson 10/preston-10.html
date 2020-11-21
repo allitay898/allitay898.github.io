@@ -10,6 +10,19 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <script src="js/windchill.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VEEK4RS81"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5VEEK4RS81');
+    </script>
 </head>
 
 <body onload="showBanner(); windChill();">
@@ -31,8 +44,8 @@
     <nav class="clearfix">
 
         <ul id="primaryNav" class="hide">
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="https://allitay898.github.io/Lesson%209/index.html">Home</a></li>
+            <li class="active"><a href="allitay898.github.io/Lesson 10/preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="https://allitay898.github.io/Lesson%208/stormcenter.html">Storm Center</a></li>
@@ -56,10 +69,11 @@
             </picture>
             <section class="summary">
                 <h3>Weather Summary</h3>
-                <p>Today's Weather:</p>
-                <p>Temperature: <span id="t">45</span> &#176;</p>
+                <p>Currently: <span id="current"></span></p>
+                <p>Today's High: <span id="currentTemp"></span> &deg; F</p>
+                <p>Wind chill: <span id="windchill"></span> &deg; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
                 <p>Wind Speed: <span id="s"> 12</span>MPH</p>
-                <p>Wind chill: <span id="windChill"></span></p>
 
             </section>
         </div>
@@ -69,29 +83,33 @@
             <h2 class="forecast">Five Day Forcast</h2>
             <div class="weatherCol">
                 <div class="column">
-                    <span class="col-head">Mon</span>
+                    <span class="col-head" id="day1"></span>
+                    <span class="data" id="forcast1">&deg; F</span>
                     <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">89°F</span>
                 </div>
+
                 <div class="column">
-                    <span class="col-head">Tues</span>
+                    <span class="col-head" id="day2"></span>
+                    <span class="data" id="forcast1">&deg; F</span>
                     <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">87°F</span>
                 </div>
+
                 <div class="column">
-                    <span class="col-head">Wed</span>
+                    <span class="col-head" id="day3"></span>
+                    <span class="data" id="forcast3">&deg; F</span>
                     <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="cloudy">
-                    <span class="data">78°F</span>
                 </div>
+
                 <div class="column">
-                    <span class="col-head">Thurs</span>
+                    <span class="col-head" id="day4"></span>
+                    <span class="data" id="forcast4">&deg; F</span>
                     <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">75°F</span>
                 </div>
+
                 <div class="column">
-                    <span class="col-head">Fri</span>
+                    <span class="col-head" id="day5"></span>
+                    <span class="data" id="forcast5">&deg; F</span>
                     <img class="weatherIcon" src="../Lesson 6/images/Sunny-256 (1).png" alt="sunny">
-                    <span class="data">72°F</span>
                 </div>
             </div>
         </section>
@@ -114,22 +132,20 @@
                 <a target="_blank" href="#"><img class="socialIcon"
                         src="../Lesson 6/images/social-facebook-square2-256 (1).webp" alt="facebook"></a>
             </div>
-
-            <img class="map" src="../Lesson 6/images/pexels-johnmark-smith-32307 (1).jpg" alt="map">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d388040.4693210241!2d-111.90774159024197!3d42.34960316565152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID!3m2!1d42.6543652!2d-111.60466869999999!4m5!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!3m2!1d42.0963133!2d-111.87661729999999!4m5!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID!3m2!1d42.0371544!2d-111.395956!5e0!3m2!1sen!2sus!4v1605915963725!5m2!1sen!2sus" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
 
 
     </main>
     <footer>
         <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
-                href="https://www.byui.edu/online">BYU Idaho Online Learning |</a> Current Date: <span id="currentdate"></span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
+                href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a> Current Date: <span id="currentdate"></span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
         </div>
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/currentdate.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/weatherapi.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -140,7 +156,6 @@
             }
         });
     </script>
-
 
 
 </body>
