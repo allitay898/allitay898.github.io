@@ -38,7 +38,7 @@ fetch(forapi)
            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
            const desc = jsObject.list[i].weather[0].description;
            document.getElementById('icon' + x).setAttribute('src', imagesrc);
-           document.getElementById('icon' + x).setAttribute('alt',desc);
+           document.getElementById('icon' + x).setAttribute('alt', desc);
            x++
         }
 
