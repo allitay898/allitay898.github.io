@@ -11,5 +11,5 @@ var digits = 1;
 var multiplier = Math.pow(10, digits);
 var windChillFactorRounded = Math.round(windChillFactor * multiplier ) / multiplier;
 
-document.getElementById("windChill").innerHTML = windChillFactorRounded + "°F";
+document.getElementById("windChill").innerHTML = windChillFactorRounded;
 }
