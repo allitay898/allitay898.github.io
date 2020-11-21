@@ -99,20 +99,11 @@
     }
 
     .four {
-
+    
         display: flex;
         flex-direction: row-reverse;
         align-content: center;
         justify-content: space-evenly;
-    }
-
-    .contactInfo {
-        justify-content: right;
-    }
-
-    iframe {
-        width: 100%;
-        height: 300px;
     }
 
     .socialIcon {
