@@ -223,6 +223,7 @@ img{
 
 iframe {
     Max-width: 100%;
+    height: 300px;
 }
 
 .four {
@@ -233,7 +234,6 @@ iframe {
 
 .socialIcon {
     max-width: 20px;
-    display:inline;
 }
 
 .map {
