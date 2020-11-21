@@ -7,7 +7,7 @@ fetch(apiURL)
    document.getElementById('currentTemp').textContent = jsObject.main.temp;
    document.getElementById('humidity').textContent = jsObject.main.humidity;
    document.getElementById('windSpeed').textContent = jsObject.wind.speed;
-   document.getElementById('current').textContent = jsObject.weather[0].main;
+   document.getElementById('current').textContent = jsObject.weather[0].description;
 
 });
 
@@ -33,7 +33,7 @@ fetch(forapi)
         let weather = weekDay[date.getDay()];
         if(myTime == '18:00:00' && x<=5 ) {
            document.getElementById('weather' + x).textContent = weather;
-           document.getElementById('forecast' + x).textContent = Math.ceil(jsObject.list[i].main.temp)+ '°F';
+           document.getElementById('forecast' + x).textContent = jsObject.list[i].main.temp + '°F';
           
            const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
            const desc = jsObject.list[i].weather[0].description;
