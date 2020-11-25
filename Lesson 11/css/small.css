@@ -1,0 +1,290 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F8FF;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+header {
+    background-color: #6495ED;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 40px;
+    display: 50%;
+}
+
+
+.headings h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Biryani', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Bitter', sans-serif;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: black;
+    margin-right: auto;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.logo-box{
+    display: 50%;
+}
+
+button {
+    margin: auto;
+    margin-right: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+
+    background-color: #F0F8FF;
+    font-family: 'Bitter', sans-serif;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.content {
+
+    padding: 25px;
+}
+
+.preston{
+    text-align: center;
+}
+
+.heroCon {
+    position: relative;
+    margin: 10px auto;
+
+}
+
+#pancakebanner {
+    display: none;
+    max-width: 100%;
+    background-color: #6495ED;
+    opacity: 1;
+    text-align: center;
+    font-family: 'Bitter', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+
+}
+
+p {
+    font-family: 'Bitter', sans-serif;
+
+}
+
+.summary {
+    display: block;
+    top: 25px;
+    left: 10px;
+    background-color: #F0F8FF;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777777;
+    opacity: .8;
+    text-align: center;
+
+
+}
+
+#title {
+    border-bottom: 2px solid black;
+}
+
+.banner {
+    margin: auto;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+img{
+    display:block;
+    max-width: 100%;
+    margin:auto;
+}
+
+.column {
+    border-right: 1px solid black;
+}
+
+.weatherCol {
+    column-count: 5;
+    column-gap: 0;
+
+}
+
+.col-head {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+.data {
+    display: block;
+    padding: 0 5px 5px;
+    text-align: center;
+    font-size: .5rem;
+
+
+}
+
+.weatherIcon {
+    max-width: 60px;
+}
+
+
+
+.three {
+    border: 3px solid #FFD700;
+    text-align: center;
+}
+
+.forecast {
+    background-color: #6495ED;
+    padding: 20px;
+    text-align: center;
+}
+.sunshine {
+    display: block;
+    max-width: 100%;
+    padding: 10px;
+
+}
+
+iframe {
+    Max-width: 100%;
+    height: 300px;
+}
+
+.four {
+    border: 3px solid black;
+    display: block;
+    padding: 20px;
+}
+
+.socialIcon {
+    max-width: 20px;
+}
+
+.map {
+    max-width: 100%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    background-color: #6495ED;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:white;
+}
+
+
+#content{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:25px 5px;
+    padding:5px;
+}
+figure{
+    max-width: 100%;
+}
+figure img[data-src]{
+    filter: blur(0.2em);
+    }
+    
+  figure img{
+        filter: blur(0em);
+        transition: filter 0.5s;
+        max-width: 300px;
+        margin: 0 auto;
+        height:300px;
+    }
+
+figcaption{
+    visibility: hidden;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
