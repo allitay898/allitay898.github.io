@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Weather For All</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="showBanner();">
+    <header>
+        <picture>
+            <img class="logo-box" src="../Lesson 6/images/iconfinder_0006_Weather_171261.png" alt="Weather Logo">
+        </picture>
+        <section class="heading">
+            <h1>Weather For All</h1>
+            <div class="motto">Make sure you're ready for any occasion</div>
+
+
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+
+
+
+    </header>
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li><a href="../Lesson 11/index.html">Home</a></li>
+            <li><a href="../Lesson 11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="../Lesson 11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../Lesson 11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="mycontent">
+        <div class="inputarea">
+            <h2>User Information</h2>
+            <label for="name">
+                Full Name: 
+                <input type="text" id="name" name="fullname" required minlength="5" pattern="[A-Za-z]" size="20" placeholder="John Doe">
+            </label>
+            <label for="email">
+                Email: 
+                <input type="email" id="email" name="email" required placeholder="johndoe@email.com" size="20">
+            </label>
+            <label for="phone">
+                Phone Number: 
+                <input type="tel" id="phone" name="phone" required size="10">
+            </label>
+            <label for="zip">
+                Zip Code: 
+                <input type="number" id="zip" name="zip" required>
+            </label>
+        </div>
+        <div class="inputarea">
+            <h2>Storm Information</h2>
+            <label for="date">
+                Storm Date:
+                <input type="date" id="date" name="date" required size="10">
+            </label>
+            <label for="type">
+                Storm Type:
+                <input list="stype" id="type" name="type" required size="10">
+                <datalist id="stype">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </label>
+            <label class="flexly" for="rating">
+                Storm Severity:
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+            </label>
+            <datalist id="tickmarks">
+                <option value="0">
+                <option value="1">
+                <option value="2">
+                <option value="3">
+                <option value="4">
+                <option value="5">
+                <option value="6">
+                <option value="7">
+                <option value="8">
+                <option value="9">
+                <option value="10">
+            </datalist>
+
+            <label for="selectregion">
+                Storm Region:
+                <select name="region" id="selectregion" onchange="selectResponse()">
+                    <option value="" disabled>Select Region ...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </label>
+            <p>User in-Danger Level:</p>
+            <label for="yes"><input type="radio" id="yes" name="danger" value="0" checked>Yes</label>
+            <label for="maybe"><input type="radio" id="maybe" name="danger" value="1">Maybe</label>
+            <label for="no"><input type="radio" id="no" name="danger" value="2">No</label>
+            <label for="comments">
+                Additional Informations or Comments:
+                <textarea name="comments" id="comments"></textarea>
+            </label>
+            <input type="submit" onclick="navThanks()">
+        </div>
+    </div>
+    <footer>
+        <div>&copy; <span id="year"></span> | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+                href="https://www.byui.edu/online">&nbsp;BYU Idaho Online Learning |</a> &nbsp;<span
+                id="currentDate"></span>&nbsp;</span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="/Lesson 6/js/currentdate.js"></script>
+    <script src="js/myrating.js"></script>
+    <script src="js/selection.js"></script>
+    <script src="js/thanks.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP,Monserrat,Rubik'
+                ]
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather updates and info for Preston, Soda Springs, and Fishaven, Idaho.">
+    <title>Weather For All</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../Lesson 6/normalize.css">
+    <link rel="stylesheet" href="../Lesson 6/css/small.css">
+    <link rel="stylesheet" href="../Lesson 6/css/medium.css">
+    <link rel="stylesheet" href="../Lesson 6/css/large.css">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img class="logo-box" src="../Lesson 6/images/iconfinder_0006_Weather_171261.png" alt="Weather Logo">
+        </picture>
+        <section class="heading">
+            <h1>Weather For All</h1>
+            <div class="motto">Make sure you're ready for any occasion</div>
+
+
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+
+
+
+    </header>
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li><a href="../Lesson 11/index.html">Home</a></li>
+            <li ><a href="../Lesson 11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../Lesson 11/stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="../Lesson 11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <section id="content">
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/clouds.jpg" alt="Cloudy day">
+            <figcaption>This photo shows a happy and cloudy day. </figcaption>
+        </figure>
+        <figure>
+            <img  src="images/placeholder.jpg" data-src="images/drearyday.jpg" alt="Dreary day">
+            <figcaption>This is a photo of a dreary day.</figcaption>
+        </figure>
+        <figure>
+            <img  src="images/placeholder.jpg" data-src="images/rainyday.jpg" alt="Rainy day">
+            <figcaption>This photo is of a rainy peaceful day. </figcaption>
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="Lightning">
+            <figcaption>A great photo of a lightning bolt. </figcaption>
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/rainbow.jpg" alt="Rainbow">
+            <figcaption>A beautiful rainbow after a storm. </figcaption>
+
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="Boy dancing in rain">
+            <figcaption>This is a fun photo of a boy playing in the rain. </figcaption>
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/tornado.jpg" alt="Tornado">
+            <figcaption>A small glance at a coming tornado. </figcaption>
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/snow.jpg" alt="Snow">
+            <figcaption>A car buried after a snow storm. </figcaption>
+        </figure>
+        <figure>
+            <img src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="Sunny day">
+            <figcaption>A beautiful day of sunshine. </figcaption>
+        </figure>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div>&copy; <span id="year"></span> | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+                href="https://www.byui.edu/online">&nbsp;BYU Idaho Online Learning |</a> &nbsp;<span
+                id="currentDate"></span>&nbsp;</span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
+        </div>
+        <a href="https://allitay898.github.io/index.html" class="navback">Back to Assignment Portal</a>
+    </footer>
+    <script src="../Lesson 7/js/lazyload.js"></script>
+    <script src="../Lesson 6/js/script.js"></script>
+    <script src="../Lesson 6/js/currentdate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP,Monserrat,Rubik'
+                ]
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
+
