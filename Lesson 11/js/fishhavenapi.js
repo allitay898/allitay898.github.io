@@ -11,7 +11,7 @@ fetch(apiURL)
 
   });
 
-  const forApi = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
+  const forapi = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
 
   fetch(forapi)
 .then((response) => response.json())
