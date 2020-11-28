@@ -234,6 +234,12 @@ iframe {
 
 .socialIcon {
     max-width: 20px;
+    display: inline;
+}
+
+iframe {
+    max-width: 100%;
+    border: 0;
 }
 
 .map {

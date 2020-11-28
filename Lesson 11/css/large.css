@@ -101,11 +101,14 @@
 
     .four {
         display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
         justify-content: space-evenly;
     }
 
     .contact {
-        justify-content: first baseline;
+        text-align: center;
+        margin-top:75px;
     }
 
     .socialIcon {
