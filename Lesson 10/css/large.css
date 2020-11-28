@@ -82,6 +82,11 @@
         border: none;
     }
 
+    .article{
+        text-align: left;
+        font-size: 40px;
+    }
+
     .info {
         display: flex;
 
@@ -101,16 +106,20 @@
 
     .four {
         display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
         justify-content: space-evenly;
     }
 
-    .contact {
-        justify-content: first baseline;
+    .contactInfo{
+        text-align: center;
+        margin-top:75px;
     }
 
     .socialIcon {
         max-width: 50px;
     }
+
 
     .map {
         max-width: 25%;
