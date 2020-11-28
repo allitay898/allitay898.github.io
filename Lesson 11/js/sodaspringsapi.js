@@ -1,5 +1,5 @@
-const curApi = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
-fetch(curApi)
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
+fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
     console.log(jsObject);
