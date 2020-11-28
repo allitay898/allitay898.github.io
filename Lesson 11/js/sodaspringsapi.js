@@ -1,4 +1,4 @@
-const curApi = 'https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon=-111.4048681&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
+const curApi = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
 
 
 fetch(curApi)
@@ -11,7 +11,7 @@ fetch(curApi)
     document.getElementById('currently').textContent = jsObject.weather[0].main;
   });
 
-  const forApi = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.0380399&lon=-111.4048681&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
+  const forApi = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
 
   fetch(forApi)
   .then((response) => response.json())
