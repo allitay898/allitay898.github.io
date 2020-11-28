@@ -5,10 +5,10 @@ fetch(curApi)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
-    document.getElementById('tempF').textContent = jsObject.main.temp;
-    document.getElementById('humid').textContent = jsObject.main.humidity;
-    document.getElementById('speed').textContent = jsObject.wind.speed;
-    document.getElementById('currently').textContent = jsObject.weather[0].main;
+    document.getElementById('currentTemp').textContent = jsObject.main.temp;
+    document.getElementById('humidity').textContent = jsObject.main.humidity;
+    document.getElementById('windSpeed').textContent = jsObject.wind.speed;
+    document.getElementById('current').textContent = jsObject.weather[0].main;
   });
 
   const forApi = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
