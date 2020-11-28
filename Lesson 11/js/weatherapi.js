@@ -1,8 +1,22 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial";
+var currentURL = window.location.href;
+var currentId = "id=5604473";
+if (currentURL.indexOf("preston.html") > 0) {
+   currentId = "id=5604473";
+} else if (currentURL.indexOf("sodaSprings.html") > 0) {
+   currentId = "id=5607916"; //The Soda Springs ID here
+}
+else if (currentURL.indexOf("fishHaven.html") > 0){
+   currentId = "lat=42.0380399&lon=-111.4048681";
+}
+
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?${currentId}&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial';
+const forapi = "https://api.openweathermap.org/data/2.5/forecast?" + currentId + "&units=imperial&APPID=0b655db4a8dd3c42d0038307528bbbb3";
+
+
 fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
-   console.log(jsObject);
+   //console.log(jsObject);
    
    document.getElementById('currentTemp').textContent = jsObject.main.temp;
    document.getElementById('humidity').textContent = jsObject.main.humidity;
@@ -11,7 +25,6 @@ fetch(apiURL)
 
 });
 
-const forapi = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=0b655db4a8dd3c42d0038307528bbbb3";
 
 fetch(forapi)
 .then((response) => response.json())
@@ -41,6 +54,64 @@ fetch(forapi)
            document.getElementById('icon' + x).setAttribute('alt', desc);
            x++
         }
+
+        fetch(requestURL)
+   .then(function (response) {
+      return response.json();
+   })
+   .then(function (jsonObject) {
+      console.table(jsonObject);
+
+      const towns = jsonObject['towns'];
+      for (let i = 0; i < towns.length; i++) {
+
+         const eventInfo = document.createElement('div');
+
+         if (towns[i].name == "Preston" && currentURL.indexOf("preston.html") > 0 ) {
+
+
+
+            eventInfo.setAttribute('class', 'eventInfo');
+            for (let x = 0; x <= towns[i].events.length; x++) {
+
+               let para = document.createElement('p');
+
+               para.textContent = towns[i].events[x];
+
+               eventInfo.appendChild(para);
+
+            }
+            
+         
+
+         }
+         else if(towns[i].name == "Soda Springs" && currentURL.indexOf('sodaSprings.html') >0){
+
+            eventInfo.setAttribute('class', 'eventInfo');
+            for (let x = 0; x <= towns[i].events.length; x++) {
+
+               let para = document.createElement('p');
+
+               para.textContent = towns[i].events[x];
+
+               eventInfo.appendChild(para);
+            }
+         }
+         else if(towns[i].name == "Fish Haven" && currentURL.indexOf('fishHaven.html') > 0){
+
+            eventInfo.setAttribute('class', 'eventInfo');
+            for (let x = 0; x <= towns[i].events.length; x++) {
+
+               let para = document.createElement('p');
+
+               para.textContent = towns[i].events[x];
+
+               eventInfo.appendChild(para);
+            }
+            
+         }
+
+         document.getElementById('events').appendChild(eventInfo);
 
      }
 });

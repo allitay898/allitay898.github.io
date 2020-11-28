@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Weather For All</title>
+    <link rel="stylesheet" href="/Lesson 10/css/normalize.css">
+    <link rel="stylesheet" href="/Lesson 10/css/small.css">
+    <link rel="stylesheet" href="/Lesson 10/css/medium.css">
+    <link rel="stylesheet" href="/Lesson 10/css/large.css">
+</head>
+
+<body onload="showBanner(); windChill();">
+    <header>
+        <picture>
+            <img class="logo-box" src="../Lesson 6/images/iconfinder_0006_Weather_171261.png" alt="Weather Logo">
+        </picture>
+        <section class="heading">
+            <h1>Weather For All</h1>
+            <div class="motto">Make sure you're ready for any occasion</div>
+
+
+        </section>
+        <button onclick="toggleMenu()">&#9776;</button>
+
+
+
+    </header>
+    <nav class="clearfix">
+
+        <ul id="primaryNav" class="hide">
+            <li><a href="../Lesson 11/index.html">Home</a></li>
+            <li class="active"><a href="../Lesson 11/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../Lesson 11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../Lesson 11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="content">
+
+        <div id="pancakebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion</div>
+        <h1 id="title">Soda Springs, Idaho</h1>
+        <div class="heroCon">
+            <picture class="banner">
+            
+                <source media="(min-width:1200px)" srcset="images/Bannerlarge.jpg">
+                <source media="(min-width:650px)" srcset="images/bannermedium.jpg">
+                <source media="(min-width:375px)" srcset="images/bannersmall.jpg">
+                <img src="allitay898.github.io/Lesson 6/images/pexels-johannes-plenio-1133505 (1).jpg" alt="banner image" style="width:auto;">
+            
+            </picture>
+            <section class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>Today's High: <span id="currentTemp"></span> &deg; F</p>
+                <p>Wind chill: <span id="windChill"></span> &deg; F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span>MPH</p>
+
+            </section>
+        </div>
+
+    
+        <section class="three">
+            <h2 class="forecast">Five Day Forecast</h2>
+            <div class="weatherCol">
+                <div class="column">
+                    <span class="col-head" id="weather1"></span>
+                    <span class="data" id="forecast1">&deg; F</span>
+                    <img class="weatherIcon" src="" alt="" id="icon1">
+                </div>
+
+                <div class="column">
+                    <span class="col-head" id="weather2"></span>
+                    <span class="data" id="forecast2">&deg; F</span>
+                    <img class="weatherIcon" src="" alt="" id="icon2">                
+                </div>
+
+                <div class="column">
+                    <span class="col-head" id="weather3"></span>
+                    <span class="data" id="forecast3">&deg; F</span>
+                    <img class="weatherIcon" src="" alt="" id="icon3">                
+                </div>
+
+                <div class="column">
+                    <span class="col-head" id="weather4"></span>
+                    <span class="data" id="forecast4">&deg; F</span>
+                    <img class="weatherIcon" src="" alt="" id="icon4">                
+                </div>
+
+                <div class="column">
+                    <span class="col-head" id="weather5"></span>
+                    <span class="data" id="forecast5">&deg; F</span>
+                    <img class="weatherIcon" src="" alt="" id="icon5">                
+                </div>
+            </div>
+        </section>
+        
+        <h2 class="article">About Preston</h2>
+        <section class="info">
+            <p>Preston is an agricultural community located on the most northern side of the pristine Cache Valley touting views that can arguably be unmatched.  Cache Valley is also known as “Bridgerland”, which was discovered and explored by the famous American mountain man Jim Bridger nearly 200 years ago.  All throughout the year Preston serves as the primary hub to the most rewarding family outdoor activities found in the upper intermountain west.  These activities include: snowmobiling in Strawberry Canyon, feeding the family at numerous local fast food restaurants before driving 15 minutes to the only ski resort in Cache Valley.  Filling your boat and/or ATV before waterskiing and fishing on the multiple reservoirs, streams and rivers that also include hunting, hiking and camping into the Cache & Caribou National Forests.</p>
+            <img class="sunshine" src="../Lesson 6/images/pexels-bruno-scramgnon-585759 (1).jpg" alt="sunshine">
+        </section>
+
+        <section class="four">
+            <div class="contactInfo"></div>
+            <h2 class="contact">Contact Information</h2>
+                <p>Email: contactus@weatherforall.com</p>
+                <p>Call Us: 888-555-2323</p>
+                <a target="_blank" href="#"> <img class="socialIcon" 
+                    src="../Lesson 6/images/social-instagram-new-square2-256 (1).webp" alt="insta"></a>
+                <a target="_blank" href="#"><img class="socialIcon"
+                    src="../Lesson 6/images/twitter-256 (1).webp" alt="twitter"></a>
+                <a target="_blank" href="#"><img class="socialIcon"
+                    src="../Lesson 6/images/social-facebook-square2-256 (1).webp" alt="facebook"></a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14219.249043049578!2d-111.87596475517552!3d42.09484770854314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1602904841718!5m2!1sen!2sus" width="800" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+
+
+    </main>
+    <footer>
+        <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+                href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a>  Weather Data Provided By: 
+                <a href="https://openweathermap.org/">OpenWeatherMap | </a>Current Date: <span id="currentdate"></span><a class="portal" href="../index.html">| Back to Assignment Portal</a></div>
+        </div>
+    </footer>
+    <script src="/Lesson 10/js/script.js"></script>
+    <script src="/Lesson 10/js/currentdate.js"></script>
+    <script src="/Lesson 10/js/weatherapi.js"></script>
+    <script src="/Lesson 10/js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans JP,Monserrat,Rubik'
+                ]
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
