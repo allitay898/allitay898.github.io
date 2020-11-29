@@ -7,7 +7,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jasonObject){
-        console.table(jsonObject);
 
         const towns = jasonObject['towns'];
 
@@ -49,12 +48,12 @@ fetch(requestURL)
                   event.textContent = towns[i].events[t];
                   document.querySelector('div.events').appendChild(event);
                 }
-                if (myPath.includes("fish-haven.html") && towns[i].name == 'Fish Haven') {
+                if (myPath.includes("fishhaven.html") && towns[i].name == 'Fish Haven') {
                   let event = document.createElement('p');
                   event.textContent = towns[i].events[t];
                   document.querySelector('div.events').appendChild(event);
                 }
-                if (myPath.includes("soda-springs.html") && towns[i].name == 'Soda Springs') {
+                if (myPath.includes("sodasprings.html") && towns[i].name == 'Soda Springs') {
                   let event = document.createElement('p');
                   event.textContent = towns[i].events[t];
                   document.querySelector('div.events').appendChild(event);
