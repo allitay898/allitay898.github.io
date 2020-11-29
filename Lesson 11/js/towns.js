@@ -43,6 +43,8 @@ fetch(requestURL)
 
                 document.querySelector('div.town_info').appendChild(town_info);
             }
+
+        }
             for (let t = 0; t < towns[i].events.length; t++) {
                 if (myPath.includes("preston.html") && towns[i].name == 'Preston') {
                   let event = document.createElement('p');
@@ -59,6 +61,6 @@ fetch(requestURL)
                   event.textContent = towns[i].events[t];
                   document.querySelector('div.events').appendChild(event);
                 }
-              }
+            }
         }
     })
