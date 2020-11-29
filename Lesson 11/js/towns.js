@@ -21,14 +21,12 @@ fetch(requestURL)
                 let yearFounded = document.createElement('p');
                 let currentPopulation = document.createElement('p');
                 let averageRainfall = document.createElement('p');
-                //let events = document.createElement('p');
 
                 name.textContent = towns[i].name;
                 motto.textContent = towns[i].motto;
                 yearFounded.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 currentPopulation.textContent = 'Current Population: ' + towns[i].currentPopulation;
                 averageRainfall.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-                //events.textContent = 'Events: ' + towns[i].events;
                 photo.setAttribute('src','images/'+ towns[i].photo);
                 photo.setAttribute("height", "205");
                 photo.setAttribute('alt', name.textContent + '-' + towns[i].order);

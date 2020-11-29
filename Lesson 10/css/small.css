@@ -266,12 +266,17 @@ a:hover{
     color:white;
 }
 
-#events{
+.events {
     text-align: center;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
 }
+
 .eventTitle{
     border-bottom:1px solid #023c19;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
