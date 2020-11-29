@@ -266,6 +266,14 @@ a:hover{
     color:white;
 }
 
+#events{
+    text-align: center;
+}
+.eventTitle{
+    border-bottom:1px solid #023c19;
+    font-size: 30px;
+}
+
 
 #content{
     display:grid;
