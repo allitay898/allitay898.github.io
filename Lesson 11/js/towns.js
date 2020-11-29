@@ -1,4 +1,4 @@
-//let myPath = window.location.pathname;
+let myPath = window.location.pathname;
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -7,13 +7,13 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jasonObject){
-        //console.table(jsonObject);
+        console.table(jsonObject);
 
         const towns = jasonObject['towns'];
 
         for (let i = 0; i < towns.length; i++ ){
             if(towns[i].name == 'Preston' || towns[i].name == 'Soda Springs'|| towns[i].name == 'Fish Haven'){
-                //if (myPath.includes("index.html")){
+                if (myPath.includes("index.html")){
                 let town_info = document.createElement('info_blocks');
                 let name = document.createElement('h2');
                 let photo = document.createElement('img');
@@ -43,5 +43,23 @@ fetch(requestURL)
 
                 document.querySelector('div.town_info').appendChild(town_info);
             }
+            for (let t = 0; t < towns[i].events.length; t++) {
+                if (myPath.includes("preston.html") && towns[i].name == 'Preston') {
+                  let event = document.createElement('p');
+                  event.textContent = towns[i].events[t];
+                  document.querySelector('div.events').appendChild(event);
+                }
+                if (myPath.includes("fish-haven.html") && towns[i].name == 'Fish Haven') {
+                  let event = document.createElement('p');
+                  event.textContent = towns[i].events[t];
+                  document.querySelector('div.events').appendChild(event);
+                }
+                if (myPath.includes("soda-springs.html") && towns[i].name == 'Soda Springs') {
+                  let event = document.createElement('p');
+                  event.textContent = towns[i].events[t];
+                  document.querySelector('div.events').appendChild(event);
+                }
+              }
         }
+
     })
