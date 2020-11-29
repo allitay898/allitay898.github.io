@@ -221,20 +221,20 @@ img{
 
 }
 
-.contactInfo{
-    text-align: center;
+.four {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
-
-.four {
-    border: 3px solid black;
-    display: block;
-    padding: 20px;
+.contactInfo{
+    text-align: center;
+    margin-top:75px;
 }
 
 .socialIcon {
-    max-width: 20px;
-    display: inline;
+    max-width: 50px;
 }
 
 iframe {
