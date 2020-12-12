@@ -55,6 +55,34 @@
         <div class="mycontent">
             <div class="inputarea">
                 <h2>Reserve your ride today!</h2>
+                <label for="date">
+                    Reservation Date:
+                    <input type="date" id="date" name="date" required size="10">
+                </label>
+                <label for="type">
+                    Rental Type:
+                    <input list="stype" id="type" name="type" required size="10">
+                    <datalist id="stype">
+                        <option value="Honda Metro Scooter">
+                        <option value="Honda Dio Scooter">
+                        <option value="Honda PCX150 Scooter">
+                        <option value="Honda Pioneer ATV">
+                        <option value="Jeep Wranger - 4 door with A/C">
+                        <option value="Jeep Wranger - 2 door">
+                    </datalist>
+                </label>
+                <label for="number">
+                    Number of rentals: 
+                    <input type="number" id="number" name="number" required>
+                </label>
+                <label for="period">
+                    Rental period:
+                    <input list="rperiod" id="period" name="period" required size="10">
+                    <datalist id="rperiod">
+                        <option value="Half Day (3 hrs)">
+                        <option value="Full Day">
+                    </datalist>
+                </label>
                 <label for="name">
                     Full Name: 
                     <input type="text" id="name" name="fullname" required minlength="5" pattern="[A-Za-z]" size="20" placeholder="John Doe">
@@ -67,10 +95,19 @@
                     Phone Number: 
                     <input type="tel" id="phone" name="phone" required size="10">
                 </label>
-                <label for="zip">
-                    Zip Code: 
-                    <input type="number" id="zip" name="zip" required>
+                <label for="state">
+                    Home state or country: 
+                    <input type="text" id="state" name="homestate" required minlength="5" pattern="[A-Za-z]" size="20">
                 </label>
+                <label for="cruise">
+                    Cruise line if applicable: 
+                    <input type="text" id="cruise" name="cruiseline" required minlength="5" pattern="[A-Za-z]" size="20">
+                </label>
+                <label for="comments">
+                    Special Accomodations or Comments:
+                    <textarea name="comments" id="comments"></textarea>
+                </label>
+                <input type="submit" onclick="navThanks()">
             </div>
             <div class="inputarea">
                 <h2>Storm Information</h2>
