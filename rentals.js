@@ -39,3 +39,6 @@ fetch(requestURL)
 
                 document.querySelector('div.rental_info').appendChild(rental_info);
             }
+        }  
+        }
+    })     
