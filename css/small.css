@@ -1,0 +1,131 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F8FF;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+header {
+    background-color: #6495ED;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin-right: 40px;
+    display: 50%;
+}
+
+
+.headings h1 {
+    font-size: 1rem;
+    margin: 0 auto;
+    color: black;
+    font-family: 'Biryani', sans-serif;
+}
+
+h2,
+h3 {
+    font-family: 'Bitter', sans-serif;
+}
+
+.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: black;
+    margin-right: auto;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.logo-box{
+    display: 50%;
+}
+
+button {
+    margin: auto;
+    margin-right: 40px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+nav {
+
+    background-color: #F0F8FF;
+    font-family: 'Bitter', sans-serif;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+.content {
+
+    padding: 25px;
+}
+
+.preston{
+    text-align: center;
+}
+.mycontent {
+    min-height: 100px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.inputarea {
+    align-content: center;
+    max-width: 700px;
+    padding: 10px;
+    margin: 15px auto;
+    border: solid #FFD700 2px;
+    border-radius: 5px;
+    display: grid;
+    font-weight: bold;
+}
