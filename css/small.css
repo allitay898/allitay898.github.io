@@ -109,9 +109,6 @@ nav ul.hide {
     padding: 25px;
 }
 
-.preston{
-    text-align: center;
-}
 .mycontent {
     min-height: 100px;
     text-align: left;
@@ -128,4 +125,54 @@ nav ul.hide {
     border-radius: 5px;
     display: grid;
     font-weight: bold;
+}
+
+info_blocks {
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    max-width: 660px;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+info_blocks img {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+info_blocks p {
+    grid-column-start: 1;
+    margin: 2px;
+}
+
+div.rental_info {
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    background-color: #f6f7c5;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+motto {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #FFD700;
+    font-weight: bold;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+name {
+    font-family: Biryani, sans-serif;
+    margin: 0px;
+    padding: 0.5px;
+    grid-column-start: 1;
+    grid-row-start: 1;
 }
