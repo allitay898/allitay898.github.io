@@ -1,3 +1,3 @@
 function navThanks() {
-    window.location.href="https://allitay898.github.io/";
+    window.location.href="allitay898.github.io/confirmation.html";
 }
