@@ -119,8 +119,6 @@ nav ul.hide {
     box-shadow: 0 0 30px #777777;
     opacity: .8;
     text-align: center;
-
-
 }
 
 #title {
@@ -159,12 +157,12 @@ nav ul.hide {
 }
 
 .three {
-    border: 3px solid #FFD700;
+    border: 3px solid #DBD76E;
     text-align: center;
 }
 
 .forecast {
-    background-color: #6495ED;
+    background-color: #2D93AD;
     padding: 20px;
     text-align: center;
 }
