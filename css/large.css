@@ -53,6 +53,7 @@
     h1 {
         font-size: 60px;
         color: #2D93AD;
+        text-align: center;
       }
     
       .section-wrap--md {
@@ -116,11 +117,6 @@
     }
     
     
-
-
-
-
-
     .info_blocks:nth-child(even) img{
         display: block;
         grid-column: 1;
@@ -188,6 +184,31 @@
     .data {
         font-size: 20px;
     }
+
+
+
+    .firstcontent {
+        background-color: #7D7C84;
+        position: relative;
+        width: 460px;
+        height: 230px;
+    }
+    img, p{
+        position: absolute;
+        width: 100%;
+    }
+    
+    p {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        color: #fff;
+        margin: 0;
+    }
+
+
 
     .four {
         display: flex;
