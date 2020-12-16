@@ -6,10 +6,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
         <script src="/Lesson 10/js/currentdate.js"></script>
         <script src="js/rentals.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="/css/small.css">
         <link rel="stylesheet" href="/css/medium.css">
         <link rel="stylesheet" href="/css/large.css">
-
+        <link rel="stylesheet" href="https://stackpath.bootsrapcdn.com/bootstrap/4.3.1/css/bootstrap.mon.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>Scoots</title>
     </head>
 
@@ -38,10 +39,31 @@
             </ul>
         </nav>
 
-        <main class="content">
-            <div class="rental_info"></div>
-        </main>
+<style>
+    th{
+        color: #DE8F6E;    }
+</style>
+
+
+<table class="table table-striped">
+    <tr class="bg-info">
+        <th>Rental Type</th>
+        <th>Max. Persons</th>
+        <th>Half Day(3 hrs)</th>
+        <th>Full Day</th>
+        <th>Half Day (3 hrs)</th>
+        <th>Full Day</th>
+    </tr>
+
+    <tbody id="myTable">
+
+    </tbody>
+</table>
+
+<script>
+    function buildTable(data){
         
+
 
         <footer>
             <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
