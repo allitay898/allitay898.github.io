@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
         <script src="/Lesson 10/js/currentdate.js"></script>
         <script src="js/confirmation.js"></script>
@@ -38,7 +39,8 @@
             </ul>
         </nav>
 
-        <h2 class="rentalinfo">Rental Information</h2>
+        <div  class="information">
+        <h2>Rental Information</h2>
         <ul>
             <li>A $50 security deposit is required to confirm reservations.</li>
             <li>A valid drivers license is required in hand at time of rental.</li>
@@ -51,6 +53,7 @@
             <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
             <li>Rentals may be returned to either location.</li>
         </ul>
+        </div>
 
         <div class="mycontent">
             <div class="inputarea">
@@ -109,27 +112,17 @@
                 </label>
                 <input type="submit" onclick="navThanks()">
             </div>
-            
-        <main>
-
-            <section>
-                <div class="contactInfo"></div>
-                <h2 class="contact">Contact Information</h2>
-                    <p>Email: contactus@scoots.com</p>
-                    <p>Call Us: 888-555-2323</p>
-                    <a target="_blank" href="https://www.instagram.com/"> <img class="socialIcon" 
-                        src="/Lesson 6/images/social-instagram-new-square2-256 (1).webp" alt="insta"></a>
-                    <a target="_blank" href="https://twitter.com/?lang=en"><img class="socialIcon"
-                        src="/Lesson 6/images/twitter-256 (1).webp" alt="twitter"></a>
-                    <a target="_blank" href="https://www.facebook.com/"><img class="socialIcon"
-                        src="/Lesson 6/images/social-facebook-square2-256 (1).webp" alt="facebook"></a>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
-                    href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a>Current Date: <span id="currentdate"></span>
             </div>
-        </footer>
-        
+
+
+            <footer>
+                <div class="footer-social-icons">
+                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-facebook-square2-256 (1).webp" alt="Facebook icon"></a>
+                    <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-instagram-new-square2-256 (1).webp" alt="Instagram icon"></a>
+                    <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/twitter-256 (1).webp" alt="Twitter icon"></a>              
+                  </div>    
+                <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+                        href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a>Current Date: <span id="currentdate"></span>
+                </div>
+            </footer>
+            <script>getDate();</script>

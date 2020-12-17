@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 500px) {
     header img {
         width: 100%;
 
@@ -46,6 +46,14 @@
     nav ul {
         margin-left: 2%;
     }
+
+    .button {
+        margin: 1rem;
+      position: absolute;
+      top: 45%;
+      left: 30%;
+    }
+
     .mycontent {
         max-width: 85%;
         min-height: 100px;
@@ -76,14 +84,61 @@
         padding: 10px;
         box-shadow: 0 0 30px #111;
         opacity: .8;
+        padding-top: -10px;
     }
-    .four {
+
+    .forecast-container {
+        max-height: 50%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+        gap: 2px;
+    }
+    .mycontent {
+        min-height: 50px;
+        text-align: left;
+        margin: auto;
+        padding: 10px;
+ 
+    }
     
-        display: flex;
-        flex-direction: row-reverse;
+    .inputarea {
+        vertical-align: baseline;
         align-content: center;
-        justify-content: space-evenly;
+        max-width: 700px;
+        padding: 10px;
+        margin: 15px auto;
+        border: solid #7D7C84 8px;
+        border-radius: 5px;
+        display: grid;
+        font-weight: bold;
     }
+
+    .information {
+        vertical-align: text-top;
+        padding-top: 100px;
+    }
+
+    .contact-map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    .contact-info {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+    }
+
+    .map {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .map-responsive {
+        border: 1px solid grey;
+        height: 100%;
+    }    
 
     .socialIcon {
         max-width: 50px;

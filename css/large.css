@@ -56,67 +56,12 @@
         text-align: center;
       }
     
-    
-    
-    .info_blocks:nth-child(even) img{
-        display: block;
-        grid-column: 1;
-    }
-    
-    .info_blocks:nth-child(even) p{
-        grid-column: 3;
-    }
-    
-    .info_blocks:nth-child(even) h2{
-        grid-column: 3;
-    }
-    
-    .info_blocks:nth-child(even) motto{
-        grid-column: 3;
-    }
-    
-    .info_blocks img {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 6;
-        width: 400px;
-    }
-    
-    .info_blocks p {
-        grid-column-start: 1;
-        margin: 2px;
-    }
 
-
-    .firstcontent {
-        background-color: #7D7C84;
-        position: relative;
-        width: 460px;
-        height: 230px;
-    }
-
-
-
-    .four {
-        display: flex;
-        flex-direction: row-reverse;
-        align-content: center;
-        justify-content: space-evenly;
-    }
-
-    .contactInfo {
-        text-align: center;
-        margin-top:75px;
-    }
 
     .socialIcon {
         max-width: 50px;
     }
 
-    .map {
-        max-width: 25%;
-    }
 
     footer {
         display: flex;

@@ -2,7 +2,8 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
         <script src="/Lesson 10/js/currentdate.js"></script>
         <script src="js/cozumelapi.js"></script>
@@ -38,13 +39,13 @@
             </ul>
         </nav>
 
+        <div class = "button"><a style="display: block; height:50px; width:200px; background: #7D7C84; color: white; text-align: center; font-weight: bold; font-size: 100%; line-height: 50px; border-radius: 20px; text-decoration: none;" href="reservations.html">Click to Reserve Now</a></div>
 
+        
 
         <main class="content">
             <h1 id="title">Cozumel</h1>
 
-            
-            
             <main>
                 <div class="hero-container">
                   <picture>
@@ -54,74 +55,68 @@
                     <img src="weatherimg400.jpg" alt="Hero Image Scoots Rentals" loading="lazy">
                   </picture>
                   
-                  <a style="display: block; height:100px; width:500px; background: #7D7C84; color: white; text-align: center; font-weight: bold; font-size: 300%; line-height: 100px; border-radius: 20px; text-decoration: none;" href="reservations.html">Reserve Now</a>
-
                   <div class="main-forecast">
-                    <h3>Current Condition in Cozumel</h3>
-                    <div class="current-condition"></div>
-                    <div class="weather-alert"></div>
+                    <h3>Currently in Cozumel</h3>
+                    <div id="current"></div>
+                    <div id="currentTemp"></div>
+                    <div id="humidity"></div>
                     <h3>3-Day Forecast</h3>
                     <div class="forecast-container">
-                      <div class="forecast forecast-day1">
-                        <h4>Tomorrow</h4>          
-                        <p class="weather-date">11/20</p>
-                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
-                      </div>
-                      <div class="forecast forecast-day2">
-                        <h4>Tomorrow</h4>          
-                        <p class="weather-date">11/20</p>
-                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
-                      </div>
-                      <div class="forecast forecast-day3">
-                        <h4>Tomorrow</h4>          
-                        <p class="weather-date">11/20</p>
-                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
-                      </div>
+                        <div class="forecast">
+                            <h4 id='weather1'></h4>         
+                            <p id='forecast1'></p>
+                            <p id='icon1'></p>
+                        </div>
+                        <div class="forecast">
+                            <h4 id='weather2'></h4>         
+                            <p id='forecast2'></p>
+                            <p id='icon2'></p>
+                        </div>
+                        <div class="forecast">
+                            <h4 id='weather3'></h4>         
+                            <p id='forecast3'></p>
+                            <p id='icon3'></p>
+                        </div>
                     </div>
                   </div>
                 </div>
-                <section class="rental-info">
-                  <div class="rental-terms">
-                    <h2 class="about">Types of Rentals</h2>
-                    <ul>
-                        <li>Honda Motor Scooters</li>
-                            <ul>
-                                <li>Honda Metropolitan (49cc) - 1 person</li>
-                                <li>Honda Dio (110cc) - 2 person</li>
-                                <li>Honda PCX150 (149cc) - 2 person</li>
-                            </ul>
-                        <li>ATV Side-by-Side</li>
-                            <ul>
-                                <li>Honda Pioneer 1000</li>
-                            </ul>
-                        <li>Jeep Rentals</li>
-                            <ul>
-                                <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
-                                <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
-                            </ul>
-                    </ul>  
-                  </div>
-
-                </section>
+                
               </main>
-            <section>
-                <div class="contactInfo"></div>
-                <h2 class="contact">Contact Information</h2>
-                    <p>Email: contactus@scoots.com</p>
-                    <p>Call Us: 888-555-2323</p>
-                    <a target="_blank" href="https://www.instagram.com/"> <img class="socialIcon" 
-                        src="/Lesson 6/images/social-instagram-new-square2-256 (1).webp" alt="insta"></a>
-                    <a target="_blank" href="https://twitter.com/?lang=en"><img class="socialIcon"
-                        src="/Lesson 6/images/twitter-256 (1).webp" alt="twitter"></a>
-                    <a target="_blank" href="https://www.facebook.com/"><img class="socialIcon"
-                        src="/Lesson 6/images/social-facebook-square2-256 (1).webp" alt="facebook"></a>
-                </div>
-            </section>
-        </main>
-    
+
+            
+        <section class="rental-info">
+          <div class="rental-terms">
+            <h2 class="about">Types of Rentals</h2>
+            <ul>
+                <li>Honda Motor Scooters</li>
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                <li>ATV Side-by-Side</li>
+                    <ul>
+                        <li>Honda Pioneer 1000</li>
+                    </ul>
+                <li>Jeep Rentals</li>
+                    <ul>
+                        <li>4-door Jeep Wrangler - manual with A/C - 5 people max</li>
+                        <li>2-door Jeep Wrangler - open air - manual - 4 people max</li>
+                    </ul>
+            </ul>  
+          </div>
+
+        </section>
+    </body>
     <footer>
-        <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
+        <div class="footer-social-icons">
+            <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-facebook-square2-256 (1).webp" alt="Facebook icon"></a>
+            <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-instagram-new-square2-256 (1).webp" alt="Instagram icon"></a>
+            <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/twitter-256 (1).webp" alt="Twitter icon"></a>              
+          </div>    
+        <div>&copy;2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
                 href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a>  Weather Data Provided By: 
-                <a href="https://openweathermap.org/">OpenWeatherMap | </a>Current Date: <span class="current-date">
+                <a href="https://openweathermap.org/">OpenWeatherMap | </a>Current Date: <span id="currentdate"></span>
         </div>
     </footer>
+    <script>getDate();</script>

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" hred="https://www.google.com">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
         <script src="/Lesson 10/js/currentdate.js"></script>
         <link rel="stylesheet" href="/css/small.css">
@@ -37,37 +38,39 @@
                 <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <div class="mycontent">
-            <div class="inputarea">
-                <h2>User Information</h2>
-                <label for="name">
-                    Full Name: 
-                    <input type="text" id="name" name="fullname" required minlength="5" pattern="[A-Za-z]" size="20" placeholder="John Doe">
-                </label>
-                <label for="email">
-                    Email: 
-                    <input type="email" id="email" name="email" required placeholder="johndoe@email.com" size="30">
-                </label>
-                <label for="comments">
-                    Contact Us:
-                    <textarea name="comments" id="comments"></textarea>
-                </label>
-                <input type="submit" size="20">
+    <main>
+        <div class="contact-map">
+            <section class="contact-info">
+              <h3>Contact Information</h4>
+              <h4>Main Location</h4>
+              <p>Playa del Carmen-Cozumel Ferry Dock</p>
+              <p>345 Cortez Lane</p>
+              <p>Cozumel, MX 1234-6547</p>
+              <h4>Cruise Location</h4>
+              <p>Terminal Puerta Maya</p>
+              <p>955 Lopez Drive</p>
+              <p>Cozumel, MX 3421-8657</p>
+              <h5>contactus@scootsrentals.com</h5>
+              <h5>555-1234</h5>          
+            </section>
+            <div class="map">
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1Kw7243wOwyFPxIhS25TRfAhYIxEe-2VH"></iframe>
+              </div>
             </div>
-
-            <p class="port1">Rental location near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</p>
-            <iframe src="https://www.google.com/maps/search/Playa+del+Carmen-Cozumel+Ferry+dock+in+el+Centro+de+Cozumel/@20.5117313,-86.9526282,17z/data=!3m1!4b1" width="800" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <p class="port2">Rental location near the Terminal Puerta Maya</p>
-            <iframe src="https://www.google.com/maps/place/Puerta+Maya+Cruise+Ship+Terminal/@20.475822,-86.976956,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4e5748bac98d29:0xec697a2a774f7a00!8m2!3d20.475822!4d-86.974762" width="800" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-        <main>
-
+          </div>
+    </main>
 
         <footer>
+            <div class="footer-social-icons">
+                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-facebook-square2-256 (1).webp" alt="Facebook icon"></a>
+                <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/social-instagram-new-square2-256 (1).webp" alt="Instagram icon"></a>
+                <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"><img class="social-icons" src="Lesson 11/images/twitter-256 (1).webp" alt="Twitter icon"></a>              
+              </div>    
             <div>&copy; 2020 | Allison Taylor | WDD 230 |<a class="bIdaho" target="_blank"
                     href="https://www.byui.edu/online"> BYU Idaho Online Learning |</a>Current Date: <span id="currentdate"></span>
             </div>
         </footer>
+        <script>getDate();</script>
         
         

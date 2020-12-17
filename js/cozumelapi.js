@@ -1,97 +1,46 @@
-async function getWeatherJSON(requestURL) {
-   try {
-       let res = await fetch(requestURL);
-       return await res.json();
-   } catch (error) {
-       console.log(error);
-   }
-}
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&appid=0b655db4a8dd3c42d0038307528bbbb3&units=imperial";
+fetch(apiURL)
+.then((response) => response.json())
+.then((jsObject) => {
+   console.log(jsObject);
+   
+   document.getElementById('currentTemp').textContent = jsObject.main.temp + ' °F';
+   document.getElementById('humidity').textContent = "Humidity: " + jsObject.main.humidity + "%";
+   document.getElementById('current').textContent = jsObject.weather[0].description;
 
-function getWeekdayText(dayNum = 0) {
-   if (dayNum == 0) {dayNum = new Date().getDay()};
-   var dayNameList = [
-       'Sunday',
-       'Monday',
-       'Tuesday',
-       'Wed',
-       'Thurs',
-       'Friday',
-       'Saturday'
-     ];      
-   return dayNameList[dayNum];
-}
+});
 
-function toTitleCase(str) {
-   return str.replace(
-     /\w\S*/g,
-     function(txt) {
-       return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+const forapi = "https://api.openweathermap.org/data/2.5/forecast?id=3530103&units=imperial&APPID=0b655db4a8dd3c42d0038307528bbbb3";
+
+fetch(forapi)
+.then((response) => response.json())
+.then((jsObject) => {
+   console.log(jsObject);
+     var x = 1;
+     var weekDay = new Array(7);
+     weekDay[0] = "Sun";
+     weekDay[1] = "Mon";
+     weekDay[2] = "Tues";
+     weekDay[3] = "Wed";
+     weekDay[4] = "Thurs";
+     weekDay[5] = "Fri";
+     weekDay[6] = "Sat";
+
+     for(var i = 0; i < jsObject.list.length; i++){
+      var myTime = jsObject.list[i].dt_txt.substring(11);
+        var myDate = new Date(jsObject.list[i].dt * 1000);
+        var weather = weekDay[myDate.getDay()];
+        if(myTime == '18:00:00' && x <= 5 ) {
+            document.getElementById('weather' + x).textContent = weather;
+           document.getElementById('forecast' + x).textContent = jsObject.list[i].main.temp + '°F';
+          
+           const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
+           const desc = jsObject.list[i].weather[0].description;
+           document.getElementById('icon' + x).textContent = desc;
+
+
+           x++
+        }
+
      }
-   );
- }
-
-async function renderWeather(cityName) {
-   let key = '09c3a2bd1edd511d62c2dd195b57b417';
-   //https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-   // [20.5083, -86.9458]
-   let forecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=20.5083&lon=-86.9458&appid=${key}&units=imperial`;
-
-   let forecastData = await getWeatherJSON(forecastUrl);
-   let currentHtml = `
-       <p><span class="weather-point">${Math.round(forecastData.current.temp)}&deg;F</span> and <span class="weather-point">${forecastData.current.humidity}%</span> humidity with <span class="weather-point">${forecastData.current.weather[0].main}</span></p>`;
-   document.querySelector('.current-condition').innerHTML = currentHtml;
-   if(forecastData.hasOwnProperty('alerts')){
-       let alerts = forecastData.alerts;
-       document.querySelector('.weather-alert').innerHTML = 'Alert: ' + alerts[0].event;
-   }
-
-   let forecastDaily = forecastData.daily;
-
-   let newDate = new Date();
-   let dayDescrip = '';
-   let iconimg = '';
-   let dayNum = 0;
-
-   forecastDaily.forEach(day => {
-       if (dayNum > 0 && dayNum < 4) {
-           newDate = new Date(day.dt * 1000);
-           if (newDate.getDate() == new Date().getDate()) {
-               dayDescrip = 'Today';
-           } else {
-               dayDescrip = getWeekdayText(newDate.getDay());
-           }
-
-           iconimg = '';
-           switch (day.weather[0].icon.substr(0, 2)) {
-               case '01': 
-                   iconimg = 'Sunny-256.png';
-                   break;
-               case '02': 
-                   iconimg = 'partly-cloudy.png';
-                   break;
-               case '03': 
-                   iconimg = 'cloudy.png';
-                   break;
-               case '04': 
-                   iconimg = 'broken-clouds.png';
-                   break;
-               case '09': 
-                   iconimg = 'showers.png';
-                   break;
-           }
-
-           document.querySelector(`.forecast-day${dayNum} h4`).innerHTML = dayDescrip;
-           document.querySelector(`.forecast-day${dayNum} .weather-date`).innerHTML = `${newDate.getMonth()+1}/${newDate.getDate()}`;
-           document.querySelector(`.forecast-day${dayNum} img`).setAttribute('src', `images/${iconimg}`);
-           document.querySelector(`.forecast-day${dayNum} img`).setAttribute('alt', `${iconimg} alternate image for ${day.weather[0].icon}png.`);
-           document.querySelector(`.forecast-day${dayNum} img`).setAttribute('title', day.weather[0].main);
-           document.querySelector(`.forecast-day${dayNum} .weather-word`).innerHTML = `${Math.round(day.temp.day)}&deg;F`; //${toTitleCase(day.weather[0].description)}: 
-       }
-       dayNum++;
-   });
-}
-
-let activeMenu = document.querySelector("a.active");
-if (activeMenu !== null) {
-   renderWeather(activeMenu.textContent);
-}
+});

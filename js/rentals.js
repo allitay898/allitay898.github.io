@@ -19,7 +19,7 @@ function buildTable(){
     var body = document.createElement('tbody');
 
         
-    //var tableInfo = '';
+
 
     for (var i = 0; i < rentals.length; i++){
 
@@ -33,10 +33,9 @@ function buildTable(){
                     '<td>' + rentals[i].halfwalkin + '</td>' +
                     '<td>' + rentals[i].fullwalkin + '</td>';
         body.appendChild(row);
-        //body.insertRow(row.toString());
-                //tableInfo += row;
+     
     }
     table.appendChild(body);
-    //body.innerHTML = tableInfo;
+
 }
  
