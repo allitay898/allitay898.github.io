@@ -65,13 +65,13 @@
         position: relative;
         margin: 10px auto 5px;
     }
-    
+
     .main-forecast {
         max-width: 40%;
         position: absolute;
         bottom: 10px;
         right: 10px;
-        background-color: #A882DD;
+        background-color: #DE8F6E;
         border: 1px solid black;
         padding: 10px;
         box-shadow: 0 0 30px #111;

@@ -1,7 +1,7 @@
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 1200px) {
 
-
-    header {
+   
+   header {
         background-color:#DE8F6E;
         padding: 20px 0;
         display: flex;
@@ -56,65 +56,6 @@
         text-align: center;
       }
     
-      .section-wrap--md {
-        padding: 170px 0;
-    }
-    .section-wrap {
-        padding: 120px 0;
-        overflow: hidden;
-    }
-    
-    .bg-light {
-        background-color: #DBD76E;
-        ;
-    }
-    .call-to-action__title {
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-
-    .btn {
-        font-family: "Arimo font", sans-serif;
-        font-weight: 700;
-        overflow: hidden;
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-        letter-spacing: 0.14em;
-        border-radius: 3px;
-        border: none;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        color: #fff;
-        background-color: #121212;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        position: relative;
-        z-index: 1;
-        white-space: nowrap;
-        vertical-align: middle;
-        -ms-touch-action: manipulation;
-        touch-action: manipulation;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    
-    .btn-lg, .btn-lg.btn-button {
-        font-size: 13px;
-        padding: 0 34px;
-        line-height: 46px;
-    }
-    
-    .btn-color {
-        background-color: #88AB75;
-    }
     
     
     .info_blocks:nth-child(even) img{
@@ -182,4 +123,4 @@
         justify-content: space-evenly;
         font-size: 1rem;
     }
-}    
+} 
