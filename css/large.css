@@ -146,45 +146,6 @@
         grid-column-start: 1;
         margin: 2px;
     }
-    .summary {
-        position: absolute;
-        top: 50px;
-        left: 10px;
-        background-color: #F0F8FF;
-        border: 1px solid #ccc;
-        padding: .5rem;
-        box-shadow: 0 0 30px #777777;
-        opacity: .8;
-
-
-    }
-    .col-head,
-    .forecast {
-        font-size: 25px;
-    }
-
-    .column {
-        padding: 5px;
-        border: none;
-    }
-
-    .info {
-        display: flex;
-
-    }
-
-    .sunshine {
-        max-width: 20%;
-        height: auto;
-        float: right;
-        margin: 0 10px 10px 0;
-
-    }
-
-    .data {
-        font-size: 20px;
-    }
-
 
 
     .firstcontent {
