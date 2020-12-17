@@ -63,32 +63,20 @@ async function renderWeather(cityName) {
 
            iconimg = '';
            switch (day.weather[0].icon.substr(0, 2)) {
-               case '01': //sunny or clear
-                   iconimg = 'sunny.png';
+               case '01': 
+                   iconimg = 'Sunny-256.png';
                    break;
-               case '02': //few clouds
+               case '02': 
                    iconimg = 'partly-cloudy.png';
                    break;
-               case '03': //scattered clouds
+               case '03': 
                    iconimg = 'cloudy.png';
                    break;
-               case '04': //broken clouds
+               case '04': 
                    iconimg = 'broken-clouds.png';
                    break;
-               case '09': //showers
+               case '09': 
                    iconimg = 'showers.png';
-                   break;
-               case '10': //rain
-                   iconimg = 'rain.png';
-                   break;
-               case '11': //thunderstorm 
-                   iconimg = 'thunderstorms.png';
-                   break;
-               case '13': //snow
-                   iconimg = 'snow.png';
-                   break;
-               case '50': //mist or fog
-                   iconimg = 'mists.png';
                    break;
            }
 
