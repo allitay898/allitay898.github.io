@@ -1,26 +1,42 @@
 let myPath = window.location.pathname;
 
 const requestURL = 'https://allitay898.github.io/rentals.json';
-
+var rentals = {};
+   
 fetch(requestURL) 
     .then(function (response) {
         return response.json();
     })
     .then(function (jasonObject){
 
-        const rentals = jasonObject['rentals'];
-
-        var table = document.getElementbyId('myTable')
-    
-        for (var i = 0; i < data.length; i++){
-            var row = <tr>
-                        <td>${data[i].rentaltype}</td>
-                        <td>${data[i].maxpersons}</td>
-                        <td>${data[i].halfreservation}</td>
-                        <td>${data[i].fullreservation}</td>
-                        <td>${data[i].halfwalkin}</td>
-                        <td>${data[i].fullwalkin}</td>
-                    </tr>
-        }
+        rentals = jasonObject['rentals'];
     }
-    )   
+    )
+
+function buildTable(){
+    
+    var table = document.getElementById("reservationTable");
+    var body = document.createElement('tbody');
+
+        
+    //var tableInfo = '';
+
+    for (var i = 0; i < rentals.length; i++){
+
+        var row = document.createElement('tr');
+
+        row.innerHTML = 
+                    '<td>' + rentals[i].rentaltype + '</td>' +
+                    '<td>' + rentals[i].maxpersons + '</td>' +
+                    '<td>' + rentals[i].halfreservation + '</td>' +
+                    '<td>' + rentals[i].fullreservation + '</td>' +
+                    '<td>' + rentals[i].halfwalkin + '</td>' +
+                    '<td>' + rentals[i].fullwalkin + '</td>';
+        body.appendChild(row);
+        //body.insertRow(row.toString());
+                //tableInfo += row;
+    }
+    table.appendChild(body);
+    //body.innerHTML = tableInfo;
+}
+ 
