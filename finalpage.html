@@ -39,7 +39,6 @@
         </nav>
 
 
-        <a style="display: block; height:100px; width:500px; background: #7D7C84; color: white; text-align: center; font-weight: bold; font-size: 300%; line-height: 100px; border-radius: 20px; text-decoration: none;" href="reservations.html">Reserve Now</a>
 
         <main class="content">
             <h1 id="title">Cozumel</h1>
@@ -63,45 +62,59 @@
                     </ul>
             </ul>  
             
-            <img src="weatherimg.jpg">
+            <main>
+                <div class="hero-container">
+                  <picture>
+                    <source media="(max-width: 400px)" srcset="weatherimg400.jpg">
+                    <source media="(max-width: 700px)" srcset="weatherimg700.jpg">
+                    <source media="(min-width: 701px)" srcset="weatherimg1200.jpg">
+                    <img src="weatherimg400.jpg" alt="Hero Image Scoots Rentals" loading="lazy">
+                  </picture>
+                  
+                  <a style="display: block; height:100px; width:500px; background: #7D7C84; color: white; text-align: center; font-weight: bold; font-size: 300%; line-height: 100px; border-radius: 20px; text-decoration: none;" href="reservations.html">Reserve Now</a>
 
-            <section class="summary">
-                <h3>Weather in Cozumel</h3>
-                <p>Currently: <span id="current"></span></p>
-                <p>Current Temperature: <span id="currentTemp"></span> &deg; F</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-             </section>
-
-
-             <section class="three">
-                <h2 class="forecast">Next Three Days in Cozumel</h2>
-                <div class="weatherCol">
-                    <div class="column">
-                        <span class="col-head" id="weather1"></span>
-                        <span class="data" id="forecast1">&deg; F</span>
+                  <div class="main-forecast">
+                    <h3>Current Condition in Cozumel</h3>
+                    <div class="current-condition"></div>
+                    <div class="weather-alert"></div>
+                    <h3>3-Day Forecast</h3>
+                    <div class="forecast-container">
+                      <div class="forecast forecast-day1">
+                        <h4>Tomorrow</h4>          
+                        <p class="weather-date">11/20</p>
+                        <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+                      </div>
+                      <div class="forecast forecast-day2">
+                        <h4>Tomorrow</h4>          
+                        <p class="weather-date">11/20</p>
+                        <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+                      </div>
+                      <div class="forecast forecast-day3">
+                        <h4>Tomorrow</h4>          
+                        <p class="weather-date">11/20</p>
+                        <img src="images/blank.png" alt="Partly Cloudy" title="Clouds">
+                        <p class="weather-word">Partly Cloudy: 73&deg;F</p>
+                      </div>
                     </div>
-    
-                    <div class="column">
-                        <span class="col-head" id="weather2"></span>
-                        <span class="data" id="forecast2">&deg; F</span>
-                    </div>
-    
-                    <div class="column">
-                        <span class="col-head" id="weather3"></span>
-                        <span class="data" id="forecast3">&deg; F</span>
-                    </div>
+                  </div>
                 </div>
-            </section>
-
-
-
-
-
-
-
-        
-        <main>
-
+                <section class="rental-info">
+                  <div class="rental-terms">
+                    <h2>Let's get you on the road!</h2>
+                    <ul>
+                      <li>Check out takes less than 5 minutes</li>
+                      <li>Both single and double-seaters available</li>
+                      <li>Shuttle to the dockyard after rental</li>
+                      <li>Environmentally friendly - low emmisions</li>
+                      <li>Safety training provided</li>
+                      <li>Save more with a <a href="reservations.html">reservation</a></li>
+                    </ul>
+                  </div>
+                  <div class="rental-items"></div>
+                </section>
+              </main>
             <section>
                 <div class="contactInfo"></div>
                 <h2 class="contact">Contact Information</h2>
